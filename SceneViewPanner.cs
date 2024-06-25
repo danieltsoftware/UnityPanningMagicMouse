@@ -27,7 +27,12 @@ public class SceneViewPanner
             isPanning = false;
             e.Use();
         }
-        
+        else if (e.type == EventType.MouseLeaveWindow)
+        {
+            isPanning = false;
+            e.Use();
+        }
+
         if (isPanning && Event.current != null)
         {
             Vector2 currentMousePosition = Event.current.mousePosition;
