@@ -15,7 +15,7 @@ The script allows for panning that feels exactly like panning natively in Unity 
 
 1. **Download and Install MiddleClick**
 
-2. **Download the Editor Script**: [Raw CS file on Github] (https://raw.githubusercontent.com/danieltsoftware/UnityPanningMagicMouse/main/SceneViewPanner.cs)
+2. **Download the Editor Script**: [Raw CS file on Github](https://raw.githubusercontent.com/danieltsoftware/UnityPanningMagicMouse/main/SceneViewPanner.cs)
 
 3. **Add the Script to Your Unity Project**:
    - Open your Unity project.
