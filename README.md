@@ -22,7 +22,7 @@ The script allows for panning that feels exactly like panning natively in Unity 
    - Create an `Editor` folder in your project's `Assets` directory if it doesn't already exist.
    - Copy the `SceneViewPanner.cs` script into the `Editor` folder.
 
-4. **Try it!** (You might need to click inside the scene view first to activate the script, sometimes the scene view becomes unfocused)
+4. **Success!**
 
 ## Usage
 
