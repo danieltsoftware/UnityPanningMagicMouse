@@ -9,7 +9,7 @@ The script allows for panning that feels exactly like panning natively in Unity 
 - **MacOS Sonoma (Tested on Sonoma 14.5)**
 - **Unity Editor**
 - **Magic Mouse**
-- **MiddleClick App**: [Download Here](https://github.com/artginzburg/MiddleClick-Sonoma)
+- **MiddleClick App**: [Download Here](https://github.com/artginzburg/MiddleClick-Sonoma/releases/tag/2.7)
 
 ## Installation
 
