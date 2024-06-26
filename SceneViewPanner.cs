@@ -14,35 +14,38 @@ public class SceneViewPanner
     
     static void OnSceneGUI(SceneView sceneView)
     {
-        Event e = Event.current;
+        if (Event.current != null)
+        {
+            Event e = Event.current;
 
-        if (e.type == EventType.MouseDown && e.button == 2)
-        {
-            isPanning = true;
-            lastMousePosition = e.mousePosition;
-            e.Use();
-        }
-        else if (e.type == EventType.MouseUp && e.button == 2)
-        {
-            isPanning = false;
-            e.Use();
-        }
-        else if (e.type == EventType.MouseLeaveWindow)
-        {
-            isPanning = false;
-            e.Use();
-        }
-
-        if (isPanning && Event.current != null)
-        {
-            Vector2 currentMousePosition = Event.current.mousePosition;
-            Vector2 delta = currentMousePosition - lastMousePosition;
-            delta.y = -delta.y;
-            lastMousePosition = currentMousePosition;
-
-            if (sceneView!= null)
+            if (e.type == EventType.MouseDown && e.button == 2)
             {
-                PanSceneView(sceneView, delta);
+                isPanning = true;
+                lastMousePosition = e.mousePosition;
+                e.Use();
+            }
+            else if (e.type == EventType.MouseUp && e.button == 2)
+            {
+                isPanning = false;
+                e.Use();
+            }
+            else if (e.type == EventType.MouseLeaveWindow)
+            {
+                isPanning = false;
+                e.Use();
+            }
+
+            if (isPanning)
+            {
+                Vector2 currentMousePosition = Event.current.mousePosition;
+                Vector2 delta = currentMousePosition - lastMousePosition;
+                delta.y = -delta.y;
+                lastMousePosition = currentMousePosition;
+
+                if (sceneView!= null)
+                {
+                    PanSceneView(sceneView, delta);
+                }
             }
         }
     }
